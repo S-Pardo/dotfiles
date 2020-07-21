@@ -1,0 +1,49 @@
+debug = true
+order = ["audio","backlight","battery","network","time"]
+separator = " "
+
+[audio]
+control = "Master"
+mute = " ﱝ"
+template = "^c#000000^^b#6a77ff^ {ICO} ^d^^c#6a77ff^ {VOL}%^d^"
+icons = ["奄", "奔", "墳"]
+
+[backlight]
+device = "intel_backlight"
+template = "^c#000000^^b#ebcb8b^ {ICO} ^d^^c#ebcb8b^ {BL}%^d^"
+icons = ["", "", ""]
+
+[battery]
+charging = "^c#000000^^b#59ff51^ "
+discharging = "^c#000000^^b#7eee78^ "
+enable_notifier = true
+no_battery = ""
+notifier_critical = 10
+notifier_levels = [2, 5, 10, 15, 20]
+separator = " · "
+icons = ["",
+"",
+"",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^",
+" ^d^^c#7eee78^"]
+
+[cpu_load]
+template = "{CL1} {CL5} {CL15}"
+update_interval = 20
+
+[network]
+no_value = "NA"
+template = "^c#000000^^b#88c0d0^   ^d^^c#88c0d0^"
+#template = "^c#2e3440^^b#88c0d0^   ^d^^c#88c0d0^ {ESSID}"
+
+[time]
+#format = "%H:%M %A %d-%m-%y"
+format = "^c#000000^^b#a3be8c^  ^d^^c#a3be8c^ %H:%M %A %d-%m-%y"
+update_seconds = false
+
