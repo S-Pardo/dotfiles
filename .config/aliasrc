@@ -13,7 +13,7 @@ alias \
 	mv="mv -iv" \
 	rm="rm -v" \
 	mkd="mkdir -pv" \
-	config="/usr/bin/git --git-dir=$HOME/Documents/repositories/configs --work-tree=$HOME" \
+	config="git --git-dir=$HOME/Documents/repositories/configs --work-tree=$HOME" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
