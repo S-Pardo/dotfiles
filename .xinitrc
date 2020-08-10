@@ -6,4 +6,6 @@ xrandr --auto
 
 setxkbmap us -variant altgr-intl
 /usr/bin/prime-offload
-ssh-agent dwm || break
+while :; do
+	ssh-agent dwm || break
+done
