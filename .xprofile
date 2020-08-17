@@ -1,4 +1,4 @@
-#!/bin/sh
+o!/bin/sh
 
 # This file runs when a DM logs you into a graphical session.
 # If you use startx/xinit like a Chad, this file will also be sourced.
@@ -10,7 +10,8 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 numlockx &			# turn on NumLock when starting x
 initbg &			# set the background with the `initbg` script
 picom --experimental-backend -b # picon for transparency and blur
-~/Documents/repositories/dwm-status/target/release/dwm-status ~/.config/dwm-status/defaults.toml &
+rstatus &
+nm-applet &
 trayer --edge top --align center --SetDockType true --SetPartialStrut true --expand true --widthtype request --transparent true --alpha 255 &
 dunst &			# dunst for notifications
 xset r rate 300 50 &	# Speed xrate up
